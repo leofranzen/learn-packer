@@ -1,0 +1,7 @@
+# packer
+*.pkrvars.hcl
+
+# terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
