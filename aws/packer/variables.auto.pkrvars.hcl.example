@@ -1,0 +1,12 @@
+region      = "sa-east-1"
+environment = "dev"
+
+ami_name        = "nginx"
+ami_version     = "1.0.0"
+ami_description = "simple nginx"
+
+instance_type = "t2.micro"
+source_ami    = "ubuntu-22.04"
+
+vpc_name    = "learn-vpc"
+subnet_name = "learn-subnet-public1-sa-east-1a"

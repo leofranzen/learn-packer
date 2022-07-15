@@ -1,0 +1,32 @@
+---
+- name: playbook nginx
+  hosts: default
+  become: true
+  gather_facts: true
+  tasks:
+  - name: install nginx family .deb
+    when: ansible_facts['os_family'] == 'Debian'
+    apt:
+      name: nginx
+      update_cache: yes
+  - name: install nginx family .rpm
+    when: ansible_facts['os_family'] == 'RedHat'
+    dnf:
+      name: nginx
+
+  - name: create index.html
+    when: ansible_facts['os_family'] == 'Debian'
+    template:
+      src: index.html.j2
+      dest: /var/www/html/index.html
+  - name: create index.html
+    when: ansible_facts['os_family'] == 'RedHat'
+    template:
+      src: index.html.j2
+      dest: /usr/share/nginx/html/index.html
+
+  - name: enable service nginx
+    systemd:
+      name: nginx
+      state: started
+      enabled: yes
