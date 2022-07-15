@@ -28,3 +28,6 @@ packer build .
 | source_ami      | debian-11/ubuntu-22.04/rhel-9   | Sistema operacional |
 | vpc_name        | learn-vpc                       | Nome da VPC que a AMI será criada |
 | subnet_name     | learn-subnet-public1-sa-east-1a | Nome da Subnet que a AMI será criada |
+
+## AMI criada
+![ami-criada](images/ami-aws.png)
