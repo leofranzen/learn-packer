@@ -1,7 +1,7 @@
 # learn-packer
 
 ## Packer
-Ferramenta criada pela [hashicorp](https://www.packer.io/) criada com o intuito de automatizar
+Ferramenta criada pela [hashicorp](https://www.packer.io/) com o intuito de automatizar
 a criação de imagens para várias plataformas (aws, oci, docker, etc).
 
 ## Instalação
