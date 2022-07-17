@@ -1,4 +1,10 @@
-# Criar uma AMI personalizada
+# AWS
+
+## Certifique-se das variáveis para autenticação
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+
+## Criar uma AMI personalizada
 
 1. Criando VPC e Subnet (opcional)
 ```
